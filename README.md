@@ -70,8 +70,6 @@ class TopArticlesService
             ],
             func_get_args()
         )
-
-        return ($this->middleware)(func_get_args());
     }
 
     protected function invoke(int $limit, int $offset): ArticleCollection
